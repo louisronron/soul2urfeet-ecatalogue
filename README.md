@@ -1,4 +1,4 @@
-# Soul 2 UR Feet Online Product Sheet
+# Soul 2 UR Feet Online Product Catalogue
 ## Introduction
 The Official Soul 2 UR Feet Ltd. product sheet aims to provide updated product information to Soul 2 UR Feet sales locations in Papua New Guinea. It is meant to be a private system accessed internally as a reference for sales.
 
