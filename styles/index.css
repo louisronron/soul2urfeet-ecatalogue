@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    background-color: grey;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-input-1, .button-1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-input-1 {
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border: solid 1px lightgrey;
+}
+
+.button-1 {
+    padding: 1em;
+    margin: 1em;
+    background-color: #000000;
+    color: white;
+    border: hidden;
+}
+
+.button-1:hover {
+    padding: 1em;
+    margin: 1em;
+    background-color: #f3d337;
+    color: #000000;
+    border: hidden;
+}

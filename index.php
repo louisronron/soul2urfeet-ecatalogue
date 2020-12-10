@@ -7,12 +7,41 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
 
     <title>Product Catalogue - Soul 2 UR Feet Ltd.</title>
   </head>
   <body>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+
+
+  <table style="height: 100%; width: 100%; background-color: #f1f1f1;">
+    <tr>
+      <td class="align-middle text-center">
+        
+        
+
+        
+
+        
+          <h2>Online Product Catalogue</h2>
+
+          <input class="text-input-1" type="text" placeholder="Enter Product Code">
+          <input class="button-1" type="button" value="SEARCH">
+
+
+
+      </td>
+    </tr>
+</table>
+
+
+
+
+
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
