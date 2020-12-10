@@ -23,7 +23,7 @@
         
         
 
-        
+          <img src="img/logos/logo.png" width="120"><br/><br/><br/>
 
         
           <h2>Online Product Catalogue</h2>
@@ -34,6 +34,10 @@
 
 
       </td>
+    </tr>
+
+    <tr class="bg-dark" style="height: 50px; font-size: 10pt;">
+      <td class="align-middle text-center"><p>&copy; 2020 Soul 2 UR Feet Ltd.</p></td>  
     </tr>
 </table>
 
