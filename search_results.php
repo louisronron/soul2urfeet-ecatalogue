@@ -1,3 +1,16 @@
+<?php
+
+$search_query = $_GET["search"];
+// specify the query string
+$product_code = $search_query;
+require_once("api/get_product_by_code.php");
+
+?>
+
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,14 +35,27 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="img/logos/logo.png" alt="" width="30" height="24" class="d-inline-block align-top">
-      &nbsp;&nbsp;&nbsp;<h3>Search Results</h3>
+      <img src="img/logos/logo.png" alt="" width="30" height="24" class="d-inline-block align-middle">
+      &nbsp;&nbsp;&nbsp;<h5 class="d-inline-block align-middle">Search Results of: "<?php echo $search_query; ?>" </h5>
     </a>
   </div>
 </nav>
 
 
+<?php
 
+  // echo $search_results;
+  echo "<table cellpadding='10' class='table table-striped table-responsive mt-4'>";
+  foreach($search_results as $row) {
+    echo "<tr>";
+    echo "<td style='width: 200px'><img src='https://via.placeholder.com/150'></td>";
+    echo "<td style='width: 200px'>" . $row["CODE"] . "</td>";
+    echo "<td style='width: 300px'>" . $row["PRODUCT_NAME"] . "</td>";
+    echo "<td>" . $row["COLOR"] . "</td>";
+    echo "</tr>";
+  }
+  echo "</table>";
+?>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

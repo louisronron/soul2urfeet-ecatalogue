@@ -12,10 +12,6 @@ if ($conn->connect_error) {
 }
 
 
-// specify the query string
-$product_code = "B543U.07FHCZ";
-
-
 // Construct the query
 $sql = "SELECT * FROM products WHERE CODE LIKE '%" . $product_code . "%'";
 $result = $conn->query($sql);
@@ -38,11 +34,11 @@ $search_results = array();
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
+    // There are results
     array_push($search_results, $row);
   }
-  echo json_encode($search_results);
 } else {
-  echo "0 results";
+  // No results
 }
 
 

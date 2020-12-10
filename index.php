@@ -29,8 +29,8 @@
         
           <h2>Online Product Catalogue</h2>
 
-          <input class="text-input-1" type="text" placeholder="Enter Product Code">
-          <input class="button-1" type="button" value="SEARCH" onclick="search()">
+          <input id="input_code" class="text-input-1" type="text" placeholder="Enter Product Code">
+          <input id="search_button" class="button-1" type="button" value="SEARCH" onclick="search()">
 
 
 
@@ -52,7 +52,8 @@
     <script type="text/javascript">
     
       function search() {
-        alert("Search button was clicked.");
+        var code = document.getElementById("input_code").value;
+        window.location.href = "search_results.php?search=" + code.toUpperCase();
       }
 
     </script>
