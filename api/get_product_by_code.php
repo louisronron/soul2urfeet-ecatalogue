@@ -11,6 +11,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+
+// specify the query string
+
+
+
 // Construct the query
 $sql = "SELECT * FROM products";
 $result = $conn->query($sql);
