@@ -45,7 +45,7 @@ require_once("api/get_product_by_code.php");
 <?php
 
   // echo $search_results;
-  echo "<table cellpadding='10' class='table table-striped table-responsive mt-4'>";
+  echo "<table cellpadding='10' class='table table-striped mt-4'>";
   foreach($search_results as $row) {
     echo "<tr>";
     echo "<td style='width: 200px'><img src='https://via.placeholder.com/150'></td>";
