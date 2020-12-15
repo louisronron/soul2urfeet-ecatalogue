@@ -8,7 +8,7 @@ require_once("api/get_product_by_code.php");
 ?>
 
 
-
+ 
 
 
 <!doctype html>
@@ -36,16 +36,18 @@ require_once("api/get_product_by_code.php");
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="img/logos/logo.png" alt="" width="30" height="24" class="d-inline-block align-middle">
-      &nbsp;&nbsp;&nbsp;<h5 class="d-inline-block align-middle">Search Results of: "<?php echo $search_query; ?>" </h5>
+      &nbsp;&nbsp;&nbsp;<h5 class="d-inline-block align-middle">Search Results</h5>
     </a>
   </div>
 </nav>
+
+<p class="text-dark m-3">Search Results for: <span class="font-weight-bold">"<?php echo $search_query; ?>"</span></p>
 
 
 <?php
 
   // echo $search_results;
-  echo "<table cellpadding='10' class='table table-striped mt-4'>";
+  echo "<table cellpadding='10' class='table table-striped mt-4 d-none d-lg-block'>";
   foreach($search_results as $row) {
     echo "<tr>";
     echo "<td style='width: 200px'><img src='https://via.placeholder.com/150'></td>";
@@ -55,6 +57,26 @@ require_once("api/get_product_by_code.php");
     echo "</tr>";
   }
   echo "</table>";
+
+
+
+
+  // echo $search_results;
+  echo "<table cellpadding='10' class='table table-striped mt-4 d-lg-none'>";
+  foreach($search_results as $row) {
+    echo "<tr>";
+    echo "<td style='width: 200px'><img src='https://via.placeholder.com/150'></td>";
+    echo "<td style='width: 200px'>" . $row["CODE"] . "<br/>" .  $row["PRODUCT_NAME"] . "<br/>" . $row["COLOR"] . "</td>";
+    echo "</tr>";
+  }
+  echo "</table>";
+
+
+
+
+
+
+
 ?>
 
 
